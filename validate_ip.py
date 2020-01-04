@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: str
         """
         def is_ipv4(ip):
-            # 4 conditions -1. have 3 dots. 2. if 0 exists and preceeds digit, false, 3. less than 256 4. no alphabet
+            # 5 conditions -1. have 3 dots. 2. if 0 exists and preceeds digit, false, 3. less than 256 4. no alphabet
             splits = ip.split('.')
             if len(splits) != 4:
                 return False
@@ -22,7 +22,7 @@ class Solution(object):
             return True
 
         def is_ipv6(ip):
-            # 4 condititions: 1. len of splits is 8. 2. has 4 hex digits but can have 0 3. only hex
+            # 3 condititions: 1. len of splits is 8. 2. has 4 hex digits but can have 0 3. only hex
             splits = ip.split(':')
             if len(splits) != 8:
                 return False
