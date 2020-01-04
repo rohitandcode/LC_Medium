@@ -1,5 +1,5 @@
 # validate ip - ipv4 or ipv6
-class Solution(object):
+class Sol(object):
     def validIPAddress(self, ip):
         """
         :type IP: str
